@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    background-color: aqua;
+    width: 55rem;
+    max-width: 90%;
+    display: flex;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: white;
+    font-size: 36px;
+}
+
+p {
+    color: white;
+    padding-top: 30px;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: -40px;
+}
+
+.card {
+    min-height: 28rem;
+    padding: 30px 60px 30px 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.SUV {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+div>button {
+    position: absolute;
+    bottom: 30px;
+}
+
+
+button {
+    padding: 12px 25px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-family: inherit;
+}
+
+.sedan-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan-btn:hover {
+    border: 2px solid white;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    cursor: pointer;
+}
+
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-btn:hover {
+    border: 2 px solid white;
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    cursor: pointer;
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-btn:hover {
+    border: 2px solid white;
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 501px) and (max-width: 650px){
+    p{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    body{
+        padding: 70px 0;
+    }
+    main {
+        background-color: aqua;
+        width: 22rem;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+    p{
+        line-height: 2;
+    }
+
+    .card {
+        min-height: 30rem;
+        padding: 30px 90px 30px 45px;
+        position: relative;
+        line-height: 1.6;
+    }
+
+    div>button {
+        position: absolute;
+        bottom: 30px;
+    }
+    .sedan {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0 ;
+    }
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+    }
+
+}
